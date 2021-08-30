@@ -2,7 +2,7 @@
 /**
  *main - intro
  *
- *Retutn:: zero as success
+ *Return:: zero as success
  */
 int main(void)
 {
