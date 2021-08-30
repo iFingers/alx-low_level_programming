@@ -3,8 +3,7 @@
  * main - introduction of the program
  *The program starts here
  *
- *return: 0
- *
+ *Return: zero is the return of main
  */
 int main(void)
 {
