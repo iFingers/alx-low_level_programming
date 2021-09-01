@@ -1,0 +1,25 @@
+#include<stdio.h>
+/**
+ *main - Beginning of the main code
+ *Just the begining
+ * Return: it gives a 0
+ */
+
+int main()
+{
+	char charType;
+	int intType;
+	long int longIntType;
+	long long int longLongIntType;
+	float floatType;
+	
+
+	/* sizeof evaluates the size of a variable*/
+	printf("Size of a char: %zu byte\n", sizeof(charType));
+	printf("Size of an int: %zu bytes\n", sizeof(intType));
+	printf("Size of a long int: %zu byte\n", sizeof(longIntType));
+	printf("Size of a long long int: %zu byte\n", sizeof(longLongIntType));
+	printf("Size of a float: %zu bytes\n", sizeof(floatType));
+    
+	return 0;
+}
