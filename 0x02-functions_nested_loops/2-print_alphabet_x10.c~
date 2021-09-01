@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * print_alphabet - For printing the alphabet
+ *
+ *no return since its void
+ */
+
+void print_alphabet(void)
+{
+	char c;
+	int i;
+	
+	for (c = 'a'; c <= 'z'; c++)
+	{
+	_putchar(c);
+	}
+	for (i=0; i < 11; i++)
+	{
+		_putchar('\n');
+	}
+
+}
