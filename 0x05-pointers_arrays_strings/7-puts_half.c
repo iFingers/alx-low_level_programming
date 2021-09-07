@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts_half - For printing half 
+ * puts_half - For printing half
  *@str: String to put
  *
  *no return since its void
@@ -23,10 +23,10 @@ void puts_half(char *str)
 	}
 	else
 	{
-		newstart = (length -1) / 2;
+		newstart = (length - 1) / 2;
 	}
 	j = length - newstart;
-	while (*(str + i) != '\0')
+	while (*(str + j) != '\0')
 	{
 		_putchar(*(str + j));
 		j++;
