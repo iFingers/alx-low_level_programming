@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_puts(char *str) - Swap Integers with pointers
+ *_puts - Swap Integers with pointers
  *@str: String to be replaced
  *
  *no return since its void
@@ -8,7 +8,7 @@
 
 void _puts(char *str)
 {
-	int c =0;
+	int c = 0;
 
 	while (*(str + c) != '\0')
 	{
