@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * print_alphabet - For printing the alphabet
+ * reset_t0_98 - Reset pointer to a number
+ *@n: The number to be reset to
  *
  *no return since its void
  */
