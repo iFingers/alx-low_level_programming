@@ -4,7 +4,7 @@
  *@dest: destination of string to be moved
  *@src: source of string
  *
- *no return since its void
+ *Return: Destination
  */
 
 char *_strcat(char *dest, char *src)
