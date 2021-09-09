@@ -17,10 +17,10 @@ char *leet(char *s)
 	{
 		for (c = 0; c < 5; c++)
 		{
-			if (s[i] == a[c] || s[i] - 32 == a[c])
-				{
-					s[i] = b[c];
-				}
+		if (s[i] == a[c] || s[i] - 32 == a[c])
+		{
+			s[i] = b[c];
+		}
 		}
 	}
 
