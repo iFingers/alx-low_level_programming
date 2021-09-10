@@ -1,41 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-#include "main.h"
 /**
  *cap_string - For Capitalizing words
- *@str: String to be converted
+ *@s: String to be converted
  *
- *Return: WOrds in capital letters
+ *Return: Words in capital letters
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i;
+int a = 0, i;
+int cspc = 13;
+char spc[] = {32, '\t', '\n', 44, ';', 46, '!', 123, '?', 125, '"', '(', ')'};
 
-	for (i = 0; str[i] != '\0'; i++)
+while (s[a])
+{
+	i = 0;
+	while (i < cspc)
 	{
-		if (i == 0)
-		{
-			if ((str[i] >= 'a' && str[i] <= 'z'))
-				str[i] = str[i] - 32;
-			continue;
-		}
-		if (str[i] == 32 || str[i] == 46 || str[i] == 9 || str[i] == 10)
-		{
-			++i;
-			if (str[i] >= 'a' && str[i] <= 'z')
-			{
-				str[i] = str[i] - 32;
-				continue;
-			}
-		}
-		else
-		{
-
-			if (str[i] >= 'A' && str[i] <= 'Z')
-				str[i] = str[i] + 32;
-		}
+	if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+		s[a] -= 32;
+	i++;
 	}
+	a++;
+}
 
-	return (str);
+	return (s);
 }
