@@ -1,5 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+#include "main.h"
+/**
+ *cap_string - For Capitalizing words
+ *@str: String to be converted
+ *
+ *Return: WOrds in capital letters
+ */
 
 char *cap_string(char *str)
 {
@@ -9,14 +16,14 @@ char *cap_string(char *str)
 	{
 		if (i == 0)
 		{
-			if((str[i] >= 'a' && str[i] <= 'z'))
-				str[i]=str[i]-32;
+			if ((str[i] >= 'a' && str[i] <= 'z'))
+				str[i] = str[i] - 32;
 			continue;
 		}
-		if ((str[i] ==' ' || str[i] == '.'))
+		if (str[i] == 32 || str[i] == 46 || str[i] == 9 || str[i] == 10)
 		{
-				++i;
-			if(str[i] >= 'a' && str[i] <= 'z')
+			++i;
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] = str[i] - 32;
 				continue;
@@ -25,8 +32,8 @@ char *cap_string(char *str)
 		else
 		{
 
-			if(str[i]>='A' && str[i]<='Z')
-				str[i]=str[i]+32;
+			if (str[i] >= 'A' && str[i] <= 'Z')
+				str[i] = str[i] + 32;
 		}
 	}
 
